@@ -134,7 +134,7 @@ public abstract class Bag {
         for(int i = 0; i < this.capacity; i++){
             temp[i] = this.popItem();
         }
-        this.setCapacity(n);
+        this.setCapacity(this.capacity + n);
         this.setContents();
         for(int i = 0; i < temp.length; i++){
             this.addItem(temp[i]);
